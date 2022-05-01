@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* BODY */
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+}
+
+.card,
+.card-img img {
+    max-width: 20rem;
+    border-radius: 1.3rem;
+}
+.card-img img {
+    padding: 1.3rem;
+    border-radius: 1.7rem;
+}
+.content {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.content,
+.content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.content-text,
+.profile {
+    color: hsl(0, 0%, 100%);
+}
+.content-text {
+    font-weight: 300;
+}
+.content-text p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.content-info,
+.content-ethereum,
+.content-time-left,
+.content-profile {
+    display: flex;
+    align-items: center;
+}
+.content-info {
+    justify-content: space-between;
+}
+.content-ethereum,
+.content-time-left {
+    font-size: 16px;
+    font-weight: 100;
+    gap: .5rem;
+}
+.content-ethereum h4 {
+    color: hsl(178, 100%, 50%)
+}
+.content-time-left h4,
+.content-profile h5 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+.content hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.content-profile img {
+    width: 10%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.content-profile {
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+

@@ -21,11 +21,16 @@ body {
 .card {
     background-color: hsl(216, 50%, 16%);
 }
-
 .card,
 .card-img img {
-    max-width: 20rem;
+    max-width: 21rem;
     border-radius: 1.3rem;
+}
+.card-img {
+    position: relative;
+}
+.overlay-icon {
+    display: none;
 }
 .card-img img {
     padding: 1.3rem;
@@ -41,12 +46,14 @@ body {
     flex-direction: column;
     gap: 1.1rem;
 }
-.content-text,
+.content-text h1,
 .profile {
     color: hsl(0, 0%, 100%);
 }
-.content-text {
-    font-weight: 300;
+.content-text h1 {
+    font-weight: 600;
+    font-size: 20px;
+
 }
 .content-text p {
     font-size: 18px;
@@ -66,22 +73,23 @@ body {
 .content-ethereum,
 .content-time-left {
     font-size: 16px;
-    font-weight: 100;
     gap: .5rem;
 }
-.content-ethereum h4 {
-    color: hsl(178, 100%, 50%)
+.content-ethereum p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
 }
-.content-time-left h4,
-.content-profile h5 {
+.content-time-left p,
+.content-profile p {
     color: hsl(215, 51%, 70%);
-    font-weight: 400;
+    font-weight: 300;
 }
 .content hr {
     border: 1px solid hsl(215, 32%, 27%);
+    margin-top: .5rem;
 }
 .content-profile img {
-    width: 10%;
+    width: 11%;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
 }
@@ -89,4 +97,6 @@ body {
     padding-bottom: 2rem;
     gap: 1rem;
 }
-
+.profile:hover {
+    color: hsl(178, 100%, 50%);
+}

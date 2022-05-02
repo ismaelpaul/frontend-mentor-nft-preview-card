@@ -28,9 +28,16 @@ body {
 }
 .card-img {
     position: relative;
+    display: flex;
 }
 .overlay-icon {
-    display: none;
+    opacity: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(178, 100%, 50%, 0.42);
+    transition: opacity 0.3s ease-in-out 0.3s;
 }
 .card-img img {
     padding: 1.3rem;
@@ -97,6 +104,16 @@ body {
     padding-bottom: 2rem;
     gap: 1rem;
 }
-.profile:hover {
+
+/* ACTIVE STATES */
+
+.profile:hover,
+.content-text h1:hover {
     color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.card-img:hover .overlay-icon  {
+    display:block;
+    opacity: 1;
+    cursor: pointer;
 }
